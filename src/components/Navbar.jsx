@@ -3,6 +3,7 @@ import "./Navbar.css";
 import brendLogo from "../assets/images/logo.svg";
 import { FaBars } from "react-icons/fa";
 import { HiX } from "react-icons/hi";
+import Button from "./Button";
 const Navbar = () => {
   const offcanvasRef = useRef();
   const openOffcanvas = (e)=>{
@@ -54,7 +55,7 @@ const Navbar = () => {
           </li>
         </ul>
           <FaBars className="bars-icon" onClick={openOffcanvas} />
-        <button className="btn btn-primary"  >Sign in</button>
+     <Button valueOfButton="sign in" nameOfClass="btn btn-primary" />
       </nav>
     </>
   );
