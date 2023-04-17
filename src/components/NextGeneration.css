@@ -64,7 +64,7 @@ h4{
 
 @media (max-width:991px) {
 section.next-generation{
-    padding: 16px 0px 16px 0;
+    padding: 0 16px 0px 16px;
 }
 h4{
     padding-top: 100px;
