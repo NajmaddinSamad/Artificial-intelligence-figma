@@ -6,7 +6,7 @@ const DataScience = () => {
   return (
     <section className="data-science row">
       <div className="data-left col-12 col-md-6 col-lg-6">
-        <img src={DataPhoto} alt="" />
+        <img src="https://res.cloudinary.com/doqjpxywu/image/upload/v1681721705/about_4_ot2l6t.png" alt="" />
       </div>
       <div className="data-right col-12 col-md-6 col-lg-6">
         <h2>Apply AI, Deep Learning and Data Sciece to solve</h2>
