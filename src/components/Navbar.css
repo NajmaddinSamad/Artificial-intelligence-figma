@@ -36,18 +36,20 @@ nav.navbar{
     z-index: 2;
     background-color: #333;
     right: 0;
-    top: 88px;
     width: 0;
     overflow-x: hidden;
     height: 100vh;
-    justify-content:space-around;
     align-items: center;
+    justify-content: center;
+    border: 1px solid #6d6d6d;
+    border-radius:50px 0px 0px 50px ;
 }
 
 .off-canvas a{
     text-decoration: none;
     font-size: 1.5rem;
     color:#6d6d6d;
+    padding: 20px;
     text-transform: capitalize;
 }
 .off-canvas a:hover {
@@ -71,8 +73,8 @@ nav.navbar{
     position: absolute;
     color:#6d6d6d;
     font-size:2.2rem;
-    top: 30px;
-    right: 30px;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
 }
 
@@ -134,5 +136,6 @@ nav.navbar{
     padding: 4px;
 }
 }
+
 
 

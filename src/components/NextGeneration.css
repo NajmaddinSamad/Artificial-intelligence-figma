@@ -2,9 +2,10 @@ body{
     overflow-x: hidden;
 }
 
-.next-generation{
+section.next-generation{
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 80px;
 }
 
 h4{
@@ -52,6 +53,7 @@ button{
     @media(max-width:1200px){
 section.next-generation{
     padding:30px 20px ;
+    padding-bottom: 60px;
 
 }
 h4{
@@ -73,6 +75,7 @@ h4{
     @media(max-width:768px){
 section.next-generation{
     padding:10px 10px ;
+    padding-bottom: 40px;
 }
 
 h4{
@@ -85,6 +88,7 @@ h4{
 
 section.next-generation{
     padding:4px ;
+    padding-bottom: 10px;
     
     }
 h4{
