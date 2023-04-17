@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Button = ({valueOfButton,nameOfClass}) => {
+const Button = ({valueOfButton,nameOfClass, iconPhoto}) => {
   return (
-    <button className={nameOfClass}  >{valueOfButton}</button>
+    <button className={nameOfClass}  >{iconPhoto && <img src={iconPhoto}/>}{valueOfButton}</button>
   )
 }
 
