@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import NextGeneration from './components/NextGeneration';
 import Partners from './components/Partners';
 import DataScience from './components/DataScience';
+import AwardsContainer from './components/AwardsContainer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
    <NextGeneration/>
    <Partners/>
    <DataScience/>
+   <AwardsContainer/>
     </>
   )
 }
