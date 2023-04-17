@@ -1,0 +1,85 @@
+.data-science{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 170px;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #fff;
+    padding-top: 300px;
+    /* padding-left: 68px; */
+}
+
+p{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    opacity: .7;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.data-left{
+    padding-top: 130px;
+}
+
+.data-left img{
+    width: 100%;
+}
+
+@media(max-width:1200px){
+    .data-science{
+        padding:30px 20px ;
+        padding-bottom: 130px ;
+    
+    }
+
+    .data-left{
+        padding-top: 140px;
+    }
+    h2{
+        padding-top: 220px;
+    }
+    
+    }
+    
+    @media (max-width:991px) {
+        .data-science{
+        padding: 0 16px 100px 16px ;
+    }
+    
+    .data-left{
+        padding-top: 80px;
+    }
+
+    h2{
+        padding-top: 120px;
+    }
+    }
+    
+    
+        @media(max-width:768px){
+            .data-science{
+        padding:0 10px 80px 10px ;
+        padding-bottom: 40px;
+    }
+    
+    h2{
+        padding-top: 70px;
+    }
+    
+    }
+    
+    @media(max-width:576px){
+    
+        .data-science{
+        padding: 0 4px 50px 4px ;
+        
+        }
+    h2{
+        padding-top: 50px;
+        }
+        
+        }

@@ -1,0 +1,26 @@
+import React from "react";
+import "./DataScience.css";
+import DataPhoto from "../assets/images/about3 1.png";
+import Button from "./Button";
+const DataScience = () => {
+  return (
+    <section className="data-science row">
+      <div className="data-left col-12 col-md-6 col-lg-6">
+        <img src={DataPhoto} alt="" />
+      </div>
+      <div className="data-right col-12 col-md-6 col-lg-6">
+        <h2>Apply AI, Deep Learning and Data Sciece to solve</h2>
+        <p>
+          Lorem ipsum is placeholder text commonly used in the <br /> graphic, print,
+          and publishing industries for previewing <br /> layouts and visual mockups.
+        </p>
+        <Button
+          nameOfClass="btn btn-primary text-white "
+          valueOfButton="Learn More"
+        />
+      </div>
+    </section>
+  );
+};
+
+export default DataScience;
