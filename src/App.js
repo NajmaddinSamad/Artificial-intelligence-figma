@@ -7,6 +7,7 @@ import Partners from './components/Partners';
 import DataScience from './components/DataScience';
 import AwardsContainer from './components/AwardsContainer';
 import AwesomeSolutions from './components/AwesomeSolutions';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
    <DataScience/>
    <AwardsContainer/>
    <AwesomeSolutions/>
+   <Footer/>
     </>
   )
 }
