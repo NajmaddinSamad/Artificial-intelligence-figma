@@ -4,6 +4,7 @@ import brendLogo from "../assets/images/logo.svg";
 import { FaBars } from "react-icons/fa";
 import { HiX } from "react-icons/hi";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const offcanvasRef = useRef();
   const openOffcanvas = (e)=>{
@@ -22,40 +23,40 @@ const Navbar = () => {
     <>
       <aside className="off-canvas" ref={offcanvasRef}>
         <HiX className="x-icon" onClick={closeOffcanvas} />
-        <a href="">Home</a>
-        <a href="">about</a>
-        <a href="">services</a>
-        <a href="">blog</a>
-        <a href="">contact</a>
-        <a href="">sign in</a>
+        <Link  to="/">Home</Link>
+        <Link  to="about">about</Link>
+        <Link  to="services">services</Link>
+        <Link  to="blog">blog</Link>
+        <Link  to="contact">contact</Link>
+        <Link to="signin">sign in</Link>
       </aside>
       <nav className="navbar">
-      <a className="navbar-brand" href="#">
+      <Link  className="navbar-brand" to="/">
           <img src={brendLogo} alt="" />
-        </a>
+        </Link>
       <ul className="navbar_ul">
           <li>
-            <a className="nav-link" href="#">
+            <Link  className="nav-link" to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="nav-link" href="#">
+            <Link  className="nav-link" to="about">
               about
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="nav-link">services</a>
+            <Link  className="nav-link" to='services'>services</Link>
           </li>
           <li>
-            <a className="nav-link">blog</a>
+            <Link className="nav-link" to='blog'>blog</Link>
           </li>
           <li>
-            <a className="nav-link">contact</a>
+            <Link className="nav-link" to='contact'>contact</Link>
           </li>
         </ul>
           <FaBars className="bars-icon" onClick={openOffcanvas} />
-     <Button valueOfButton="sign in" nameOfClass="btn btn-primary" />
+    <Link to= 'signin'>  <Button valueOfButton="sign in" nameOfClass="btn btn-primary" /></Link>
       </nav>
     </>
   );
