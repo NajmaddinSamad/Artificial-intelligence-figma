@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.not-found{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+     align-items: center;
+}
+#h1elemet{
+    color: #dedede;
+    font-size: 7rem;
+    text-align: center;
+}

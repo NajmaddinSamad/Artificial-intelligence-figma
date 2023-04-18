@@ -2,23 +2,34 @@ import './components/reset.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import Navbar from './components/Navbar';
-import NextGeneration from './components/NextGeneration';
-import Partners from './components/Partners';
-import DataScience from './components/DataScience';
-import AwardsContainer from './components/AwardsContainer';
-import AwesomeSolutions from './components/AwesomeSolutions';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import About from './pages/About';
+import Blog from './pages/Blog';
+import Contact from './pages/Contact';
+import Services from './pages/Services';
+import NotFound  from './pages/NotFound';
+import SignIn from './pages/SignIn';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
     <>
+   <BrowserRouter>
    <Navbar/>
-   <NextGeneration/>
-   <Partners/>
-   <DataScience/>
-   <AwardsContainer/>
-   <AwesomeSolutions/>
-   <Footer/>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+          <Route path="blog" element={<Blog />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="signin" element={<SignIn />} />
+          <Route path="services" element={<Services />} />
+          <Route path="about" element={<About />} />
+  
+      </Routes>
+      <Footer/>
+    </BrowserRouter>
     </>
   )
 }
