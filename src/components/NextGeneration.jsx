@@ -1,5 +1,5 @@
 import React from "react";
-import "./NextGeneration.css";
+import "../assets/style/NextGeneration.css";
 import Button from "./Button";
 import generation from '../assets/images/generation.svg'
 import watchLogo from '../assets/images/watch.svg'

@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./Navbar.css";
+import "../assets/style/Navbar.css";
 import brendLogo from "../assets/images/logo.svg";
 import { FaBars } from "react-icons/fa";
 import { HiX } from "react-icons/hi";

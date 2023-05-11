@@ -1,5 +1,5 @@
 import React from "react";
-import './AwesomeSolutions.css'
+import '../assets/style/AwesomeSolutions.css'
 
 const AwesomeSolutions = () => {
   return (
