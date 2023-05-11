@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="row">
       <address className="col-12 col-md-4 col-lg-2">
-        <img src={FooterLogo} alt="" />
+       <img src={FooterLogo} alt="" />
         <p>
           Lorem ipsum is placeholder text commonly used in the graphic, print,
           and layouts and visual mockups.

@@ -5,6 +5,7 @@ import generation from '../assets/images/generation.svg'
 import watchLogo from '../assets/images/watch.svg'
 const NextGeneration = () => {
   return (
+    
     <>
       <section className="next-generation row">
         <div className="left col-12 col-md-6 col-lg-6">
