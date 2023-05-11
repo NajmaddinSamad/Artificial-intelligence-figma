@@ -1,4 +1,4 @@
-import './components/reset.css'
+import './assets/style/reset.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import Navbar from './components/Navbar';

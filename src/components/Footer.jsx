@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "../assets/style/Footer.css";
 import FooterLogo from "../assets/images/socialsPhoto/footerlogo.svg";
 import Letter from '../assets/images/socialsPhoto/letter.svg'
 import Tell from '../assets/images/socialsPhoto/tell.svg'

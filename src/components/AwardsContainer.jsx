@@ -1,6 +1,5 @@
 import React from 'react'
-import './Award'
-import './AwardsContainer.css'
+import '../assets/style/AwardsContainer.css'
 import AwardsInfo from  '../AwardsInfo.json'
 import Award from './Award'
 const AwardsContainer = () => {

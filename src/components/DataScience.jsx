@@ -1,6 +1,5 @@
 import React from "react";
-import "./DataScience.css";
-import DataPhoto from "../assets/images/about3 1.png";
+import "../assets/style/DataScience.css";
 import Button from "./Button";
 const DataScience = () => {
   return (
