@@ -62,7 +62,7 @@ h4{
 
 }
 
-@media (max-width:991px) {
+@media (max-width:992px) {
 section.next-generation{
     padding: 0 16px 0px 16px;
 }
@@ -76,6 +76,7 @@ h4{
 section.next-generation{
     padding:10px 10px ;
     padding-bottom: 40px;
+    text-align: center;
 }
 
 h4{

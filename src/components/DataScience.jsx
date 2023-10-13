@@ -14,7 +14,7 @@ const DataScience = () => {
           and publishing industries for previewing <br /> layouts and visual mockups.
         </p>
         <Button
-          nameOfClass="btn btn-primary text-white "
+          nameOfClass="btn btn-primary text-white  "
           valueOfButton="Learn More"
         />
       </div>

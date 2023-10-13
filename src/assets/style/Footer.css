@@ -116,12 +116,13 @@ address .social img{
       
     }
     
-    @media (max-width:991px) {
+    @media (max-width:992px) {
 
         footer{
             padding: 50px  16px 30px;
             display: flex;
             justify-content: space-between;
+            text-align: center;
         
         }
         
