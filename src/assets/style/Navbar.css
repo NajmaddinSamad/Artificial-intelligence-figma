@@ -12,19 +12,31 @@ nav.navbar{
 
 .navbar_ul{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav-link {
+.nav-links {
     text-transform: capitalize  ;
     font-size: 1rem;
-    color: #e8e3e3 !important;
+    color: #958d8d;
     font: bold;
     cursor: pointer; 
-    padding-left: 40px;
+    padding: 0 20px;
+}
+.nav-links:active {
+    color: #fff; /* Ziyaret edilmemiş linklerin metin rengi - İstediğiniz rengi kullanabilirsiniz */
+    text-decoration: none; /* Altı çizgiyi kaldırır - İsteğe bağlı */
+  }
+
+.active{
+    background-color: transparent;
+    color:#6d6d6d !important  ;
 }
 
-.nav-link:hover{
-    color:#fff !important;
+.nav-links:hover{
+    color:#fff;
     transition: 1.2s ease;
 }
 
@@ -42,14 +54,16 @@ nav.navbar{
     justify-content: center;
     border: 1px solid #6d6d6d;
     border-radius:50px 0px 0px 50px ;
+   
 }
 
-.off-canvas a{
+aside.off-canvas a{
     text-decoration: none;
     font-size: 1.5rem;
     color:#6d6d6d;
-    padding: 20px;
+    padding: 20px 0;
     text-transform: capitalize;
+    text-align: start;
 }
 .off-canvas a:hover {
     color:#fff;
@@ -60,32 +74,28 @@ nav.navbar{
     color:#6d6d6d;
     font-size: 2.2rem;
     cursor: pointer;
+    pointer-events:all;
     display: none;
 }
 
 .bars-icon:hover{
     color: #fff;
-    transition: color 1.2s ease;
 }
 
 .x-icon{
     position: absolute;
     color:#6d6d6d;
     font-size:2.2rem;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 15px;
     cursor: pointer;
+    pointer-events: all;
 }
 
 .x-icon:hover {
-    color: #fff !important;
-    transition: color 1.2s ease;
+    color: #fff ;
 }
 
-
-.is_active{
-width: 30%;
-}
 
 /* ---Media queries  */
 
@@ -102,7 +112,7 @@ nav.navbar{
     padding: 16px;
 
 }
-.nav-link {
+.nav-links {
     padding-left: 23px;
 }
 }
@@ -110,6 +120,7 @@ nav.navbar{
 
 nav.navbar{
     padding: 10px;
+
 }
 
 

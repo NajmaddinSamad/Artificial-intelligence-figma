@@ -1,5 +1,7 @@
 import React from 'react'
 import '../assets/style/SignIn.css'
+import Button from '../components/Button'
+
 const SignIn = () => {
   return (
    <>
@@ -31,7 +33,7 @@ const SignIn = () => {
         <input required="" placeholder="" type="password" className="input"/>
         <span>Confirm password</span>
     </label>
-    <button className="submit">Submit</button>
+    <Button nameOfClass="Submit" valueOfButton='Submit'/>
     <p className="signin">Already have an acount ? <a href="#">Signin</a> </p>
 </form>
    </>

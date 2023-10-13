@@ -6,17 +6,19 @@ import { HiX } from "react-icons/hi";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 const Navbar = () => {
+  
   const offcanvasRef = useRef();
   const openOffcanvas = (e)=>{
     const clicked = e.target;
     if(clicked.classList.contains('bars-icon')){
-      offcanvasRef.current.classList.add('is_active');
+      offcanvasRef.current.style.width = '40%';
+      offcanvasRef.current.style.transition='width 1.2s ease';
     }
   };
   const closeOffcanvas = (e)=>{
     const clicked = e.target;
     if(clicked.classList.contains('x-icon')){
-      offcanvasRef.current.classList.remove('is_active');
+      offcanvasRef.current.style.width=null;
     }
   };
   return (
@@ -36,27 +38,30 @@ const Navbar = () => {
         </Link>
       <ul className="navbar_ul">
           <li>
-            <Link  className="nav-link" to="/">
+            <Link  className="nav-links" to="/">
               Home
             </Link>
           </li>
           <li>
-            <Link  className="nav-link" to="about">
+            <Link  className="nav-links" to="about">
               about
             </Link>
           </li>
           <li>
-            <Link  className="nav-link" to='services'>services</Link>
+            <Link  className="nav-links" to='services'>services</Link>
           </li>
           <li>
-            <Link className="nav-link" to='blog'>blog</Link>
+            <Link className="nav-links" to='blog'>blog</Link>
           </li>
           <li>
-            <Link className="nav-link" to='contact'>contact</Link>
+            <Link className="nav-links" to='contact'>contact</Link>
+          </li>
+          <li>
+          <Link to= 'signin'>  <Button valueOfButton="sign in" nameOfClass="btn btn-primary" /></Link>
           </li>
         </ul>
           <FaBars className="bars-icon" onClick={openOffcanvas} />
-    <Link to= 'signin'>  <Button valueOfButton="sign in" nameOfClass="btn btn-primary" /></Link>
+   
       </nav>
     </>
   );
